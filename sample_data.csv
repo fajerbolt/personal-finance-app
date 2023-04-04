@@ -1,0 +1,35 @@
+Year,Month,Category,Subcategory,Amount
+2023,Jan,Rent,Rent,5000
+2023,Jan,Bills,Electricity,247
+2023,Jan,Bills,Building,133
+2023,Jan,Bills,Internet,260
+2023,Jan,Food and Groceries,Supermarket,1800
+2023,Jan,Food and Groceries,Delivery,674
+2023,Jan,Subscriptions,Netflix,151
+2023,Jan,Subscriptions,HBO,145
+2023,Jan,Going out,Drinks and Tickets,1327
+2023,Jan,Going out,Food,156
+2023,Jan,Transport,Taxi,883
+2023,Jan,Shopping,Clothes,1500
+2023,Feb,Rent,Rent,5000
+2023,Feb,Bills,Electricity,243
+2023,Feb,Bills,Building,133
+2023,Feb,Bills,Internet,260
+2023,Feb,Food and Groceries,Supermarket,1873
+2023,Feb,Food and Groceries,Delivery,713
+2023,Feb,Subscriptions,Netflix,151
+2023,Feb,Subscriptions,HBO,145
+2023,Feb,Going out,Drinks and Tickets,1111
+2023,Feb,Transport,Taxi,926
+2023,Feb,Shopping,Tech,700
+2023,Mar,Rent,Rent,5000
+2023,Mar,Bills,Electricity,252
+2023,Mar,Bills,Building,133
+2023,Mar,Bills,Internet,260
+2023,Mar,Food and Groceries,Supermarket,2113
+2023,Mar,Food and Groceries,Delivery,715
+2023,Mar,Subscriptions,Netflix,151
+2023,Mar,Subscriptions,HBO,145
+2023,Mar,Going out,Drinks and Tickets,1398
+2023,Mar,Going out,Food,120
+2023,Mar,Transport,Taxi,1400
