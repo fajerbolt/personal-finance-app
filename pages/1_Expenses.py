@@ -103,7 +103,7 @@ else:
         incomes_by_month_subcat = data.groupby(['Year', 'Month', 'Subcategory']).sum()['Amount']
         incomes_by_month_subcat = incomes_by_month_subcat.reset_index()
 
-        incomes_by_month_subcat['month_number'] = pd.to_datetime(incomes_by_month_subcat.Month).dt.month
+        incomes_by_month_subcat['month_number'] = pd.to_datetime(incomes_by_month_subcat.Month, format='%B').dt.month
         incomes_by_month_subcat = incomes_by_month_subcat.sort_values(by=['Year', 'month_number'])
 
         #Number of categories for width of the chart
