@@ -12,7 +12,7 @@ if insert_method == 'Manual Insert':
     st.subheader('Insert your Expense Details')
     st.markdown('Make sure your data is as you want it. Once you leave this page, for any further edit you will have to restart the insert process.')
     empty_df = pd.DataFrame(columns=['Year', 'Month', 'Category', 'Subcategory', 'Amount']).reset_index()
-    df = st.experimental_data_editor(empty_df, num_rows='dynamic')
+    df = st.data_editor(empty_df, num_rows='dynamic')
     st.session_state.df = df
 else:
     #Data Uploader
@@ -29,7 +29,7 @@ else:
     if uploaded_data is not None:
         st.subheader('Review and Edit your Data')
         st.markdown('Make sure your data is as you want it. Once you leave this page, for any further edit you will have to restart the upload and edit process.')
-        df = st.experimental_data_editor(df, num_rows='dynamic')
+        df = st.data_editor(df, num_rows='dynamic')
         st.session_state.df = df
     
     else:
