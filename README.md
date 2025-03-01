@@ -8,7 +8,7 @@ First page serves to input the data into the app. There are two ways to do this:
 1. File upload and edit
 2. Manual insertion
 ### File upload
-Files that can be uploaded should be .csv or excel files, and the column structure should be: <b>Year, Month, Category, Subcategory, Amount</b>. After the file is uploaded a preview is displayed that allows edit of the data before proceeding to other two pages.<br>
+Files that can be uploaded should be .csv or excel files, and the column structure should be: <b>Date, Category, Subcategory, Amount</b>. After the file is uploaded a preview is displayed that allows edit of the data before proceeding to other two pages.<br>
 <br>
 <b>Page preview</b><br>
 ![image](https://user-images.githubusercontent.com/45373331/230467747-2ba68078-8af8-4363-a3d8-a8cd5db0851c.png)
