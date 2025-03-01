@@ -11,7 +11,7 @@ if insert_method == 'Manual Insert':
     #Manual Data Insert through date editor and empty dataframe
     st.subheader('Insert your Expense Details')
     st.markdown('Make sure your data is as you want it. Once you leave this page, for any further edit you will have to restart the insert process.')
-    empty_df = pd.DataFrame(columns=['Year', 'Month', 'Category', 'Subcategory', 'Amount']).reset_index()
+    empty_df = pd.DataFrame(columns=['Date', 'Category', 'Subcategory', 'Amount']).reset_index()
     df = st.data_editor(empty_df, num_rows='dynamic')
     st.session_state.df = df
 else:
