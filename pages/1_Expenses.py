@@ -16,7 +16,8 @@ else:
     #Data Formatting
     data.Amount = data.Amount.astype(int)
 
-    data['Month'] = data['Month'] + ' ' + data['Year'].astype(str)
+    data['Year'] = pd.to_datetime(data.Date).dt.year
+    data['Month'] = pd.to_datetime(data.Date).dt.month_name()
 
     #########DASHBOARD############
     st.sidebar.header('Filter Data')
@@ -54,7 +55,7 @@ else:
 
     incomes_by_month = incomes_by_month.reset_index()
 
-    incomes_by_month['month_number'] = pd.to_datetime(incomes_by_month.Month).dt.month
+    incomes_by_month['month_number'] = pd.to_datetime(incomes_by_month.Month, format='%B').dt.month
     incomes_by_month = incomes_by_month.sort_values(by=['Year', 'month_number'])
 
     bar_chart = alt.Chart(incomes_by_month).mark_bar().encode(
@@ -70,7 +71,7 @@ else:
     incomes_by_month_cat = data.groupby(['Year', 'Month', 'Category']).sum()['Amount']
     incomes_by_month_cat = incomes_by_month_cat.reset_index()
 
-    incomes_by_month_cat['month_number'] = pd.to_datetime(incomes_by_month_cat.Month).dt.month
+    incomes_by_month_cat['month_number'] = pd.to_datetime(incomes_by_month.Month, format='%B').dt.month
     incomes_by_month_cat = incomes_by_month_cat.sort_values(by=['Year', 'month_number'])
 
     #Number of categories for width of the chart
