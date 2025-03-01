@@ -21,7 +21,8 @@ else:
     #Data Formatting
     data.Amount = data.Amount.astype(int)
 
-    data['Month'] = data['Month'] + ' ' + data['Year'].astype(str)
+    data['Year'] = pd.to_datetime(data.Date).dt.year
+    data['Month'] = pd.to_datetime(data.Date).dt.month_name()
 
 
     #########DASHBOARD############
